@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 6
+names: ['Casa Manila', 'Fort Santiago', 'King Charles IV Monument', 'Manila Cathedral', 'Palacio de Gobernador', 'San Agustin Church']
+
+roboflow:
+  workspace: introduction-to-ai-h77mg
+  project: intramuros-c1km2
+  version: 8
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/introduction-to-ai-h77mg/intramuros-c1km2/dataset/8
