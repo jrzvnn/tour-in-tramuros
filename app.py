@@ -5,19 +5,6 @@ import webbrowser
 
 
 def play_webcam(conf, model):
-    """
-    Plays a webcam stream. Detects Objects in real-time using the YOLOv8 object detection model.
-
-    Parameters:
-        conf: Confidence of YOLOv8 model.
-        model: An instance of the `YOLOv8` class containing the YOLOv8 model.
-
-    Returns:
-        None
-
-    Raises:
-        None
-    """
     source_webcam = 0
     try:
         vid_cap = cv2.VideoCapture(source_webcam)
@@ -27,10 +14,7 @@ def play_webcam(conf, model):
             if success:
                 print(image)
                 image = cv2.resize(image, (600, int(720 * (9 / 16))))
-                # img = frame.to_ndarray(format="bgr24")
                 res = model.predict(image, conf=conf)
-                ## Tracking
-                # res = model.track(image, conf=conf, persist=True, tracker="bytetrack.yaml")
                 res_plotted = res[0].plot()
                 st_frame.image(res_plotted,
                                caption='Detected Video',
@@ -42,8 +26,6 @@ def play_webcam(conf, model):
                 break
     except Exception as e:
         st.sidebar.error("Error loading video: " + str(e))
-
-    # return image
 
 st.title("Intramuros tourist Detection with YOLOv8 ⛪📱🚀")
 st.write("This app uses YOLOv8 to perform real-time object detection on the webcam stream. It seamlessly detects famous tourist spots and buildings in Intramuros, providing users with information about the sites.")
