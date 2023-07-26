@@ -29,7 +29,7 @@ To use the repository, follow these steps:
 
 1. Clone the repository to your local machine using:
 ```
-git clone https://github.com/your_username/intramuros-object-detection.git
+git clone https://github.com/jrzvnn/tour-in-tramuros.git
 cd intramuros-object-detection
 ```
 2. The dataset is already available in the repository and is preprocessed in YOLOv8 format.
