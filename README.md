@@ -2,7 +2,7 @@
 
 Welcome to the GitHub repository for our project on object detection of historical buildings in Intramuros using [YOLOv8](https://github.com/ultralytics/ultralytics). In this project, we have developed a model that can accurately identify prominent building attractions in the historical site of Intramuros.
 
-![demo](/home/jrzvnn/Documents/Projects/tour-in-tramuros/demo.gif)
+![demo](demo.gif)
 ## Scope 
 
 The model is trained and tested to identify the following historical buildings and landmarks within Intramuros:
