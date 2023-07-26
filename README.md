@@ -2,8 +2,7 @@
 
 Welcome to the GitHub repository for our project on object detection of historical buildings in Intramuros using [YOLOv8](https://github.com/ultralytics/ultralytics). In this project, we have developed a model that can accurately identify prominent building attractions in the historical site of Intramuros.
 
-![demo](demo.gif)
-
+![demo](/home/jrzvnn/Documents/Projects/tour-in-tramuros/demo.gif)
 ## Scope 
 
 The model is trained and tested to identify the following historical buildings and landmarks within Intramuros:
@@ -33,25 +32,17 @@ To use the repository, follow these steps:
 git clone https://github.com/your_username/intramuros-object-detection.git
 cd intramuros-object-detection
 ```
-2. The dataset is already available in the repository and is preprocessed in YOLOv8 format.
-3. Train the YOLOv8 model using the `train_colab.ipynb` provided in the repository.
-4. Additionally, you can use the `main.py` script to display the webcam frames with real-time building detection in Intramuros.
-5. For a more interactive experience, you can run the `app.py` script to access the Streamlit web application for real-time webcam detection of historical buildings. To run it: 
-```
-streamlit run app.py
-```
-6. Feel free to experiment and modify the code to suit your specific use cases.
-
-
-## Installation
-
-To set up the required environment and install dependencies, you can use the provided `requirements.txt` file. Run the following command:
-
+2. To set up the required environment and install dependencies, you can use the provided `requirements.txt` file. Run the following command:
 ```
 pip install -r requirements.txt
 ```
-This will install all the necessary packages for the project.
-
+3. The dataset is already available in the repository and is preprocessed in YOLOv8 format.
+4. Train the YOLOv8 model using the `train_colab.ipynb` provided in the repository.
+5. Additionally, you can use the `main.py` script to display the webcam frames with real-time building detection in Intramuros.
+For a more interactive experience, you can run the `app.py` script to access the Streamlit web application for real-time webcam detection of historical buildings. To run it: 
+```
+streamlit run app.py
+```
 ## Contributing
 
 We welcome contributions from the community! If you find any issues or want to add improvements, feel free to create a pull request. For major changes, please open an issue to discuss the proposed changes first.
