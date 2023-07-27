@@ -4,6 +4,7 @@ from ultralytics import YOLO
 import webbrowser
 
 
+
 def play_webcam(conf, model):
     source_webcam = 0
     try:
@@ -57,5 +58,6 @@ if st.sidebar.button("Check Information"):
         webbrowser.open_new_tab(website_url)
 
 model = YOLO('models/intramuros.pt')
-play_webcam(0.15, model)
-st.write(play_webcam(0.15, model))
+if st.button("Start Webcam"):
+    play_webcam(0.15, model)
+    st.write(play_webcam(0.15, model))
