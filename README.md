@@ -44,5 +44,10 @@ For a more interactive experience, you can run the `app.py` script to access the
 streamlit run app.py
 ```
 ## Contributing
-
 We welcome contributions from the community! If you find any issues or want to add improvements, feel free to create a pull request. For major changes, please open an issue to discuss the proposed changes first.
+
+## License
+This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
+
+## Contact
+Feel free to reach out through [LinkedIn](https://www.linkedin.com/in/jrz-vnn/) if you have any questions or need further information.
